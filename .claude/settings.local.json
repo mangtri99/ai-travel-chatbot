@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm add:*)",
+      "Bash(pnpm type-check:*)",
+      "Bash(npx tsc:*)",
+      "Bash(pkill -f \"tsx watch server/index.ts\")"
+    ]
+  }
+}
