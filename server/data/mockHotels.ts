@@ -1,4 +1,4 @@
-import type { Hotel, SearchParams } from '../types'
+import type { Hotel, SearchParams } from '../types.js'
 
 const HOTELS: Hotel[] = [
   // Bali

@@ -1,7 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk'
 import type { MessageParam } from '@anthropic-ai/sdk/resources/messages'
-import { searchHotels } from './hotelSearch'
-import type { StreamChunk, SearchParams } from '../types'
+import { searchHotels } from './hotelSearch.js'
+import type { StreamChunk, SearchParams } from '../types.js'
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 

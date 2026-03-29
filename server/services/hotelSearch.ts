@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { searchMockHotels } from '../data/mockHotels'
-import type { Hotel, SearchParams } from '../types'
+import { searchMockHotels } from '../data/mockHotels.js'
+import type { Hotel, SearchParams } from '../types.js'
 
 /**
  * Single entry point for hotel search.
