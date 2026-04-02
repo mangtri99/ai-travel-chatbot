@@ -1,14 +1,26 @@
+export interface DestinationDetails {
+  country: string
+  city: string
+  displayName: string
+  location?: { latitude: number; longitude: number }
+  destinations?: string[]
+  keywords?: string[]
+}
+
 export interface Hotel {
   id: string
   name: string
-  location: string
-  price_per_night: number
+  currentCheapestPrice: number
   currency: string
-  rating: number
-  review_count: number
-  image_url: string
-  facilities: string[]
-  description: string
+  guestRating: number
+  guestRatingCount: number
+  images: string[]
+  hotelAmenities: string[]
+  roomAmenities?: string[]
+  propertyType: string
+  hasRoomAvailability: boolean
+  destinationDetails: DestinationDetails
+  provider?: string
   url?: string
 }
 
@@ -17,6 +29,21 @@ export interface StreamChunk {
   content?: string
   hotels?: Hotel[]
   error?: string
+}
+
+export interface ItineraryActivity {
+  time: string
+  type: 'activity' | 'food' | 'transport' | 'hotel'
+  title: string
+  description: string
+  estimatedCost?: number
+  tips?: string
+}
+
+export interface ItineraryDay {
+  day: number
+  title: string
+  activities: ItineraryActivity[]
 }
 
 export interface SearchParams {

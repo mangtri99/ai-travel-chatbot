@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import ChatWindow from '@/components/chat/ChatWindow.vue'
+import ItineraryModal from '@/components/itinerary/ItineraryModal.vue'
+import CompareBar from '@/components/hotel/CompareBar.vue'
+import CompareModal from '@/components/hotel/CompareModal.vue'
 </script>
 
 <template>
@@ -8,4 +11,7 @@ import ChatWindow from '@/components/chat/ChatWindow.vue'
       <ChatWindow />
     </div>
   </main>
+  <ItineraryModal />
+  <CompareBar />
+  <CompareModal />
 </template>

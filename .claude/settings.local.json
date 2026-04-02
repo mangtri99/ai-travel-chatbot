@@ -4,7 +4,8 @@
       "Bash(pnpm add:*)",
       "Bash(pnpm type-check:*)",
       "Bash(npx tsc:*)",
-      "Bash(pkill -f \"tsx watch server/index.ts\")"
+      "Bash(pkill -f \"tsx watch server/index.ts\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/mangtri/Web/ai-travel-chatbot/data.json'\\)\\); print\\(f'Total records: {len\\(d\\)}'\\)\")"
     ]
   }
 }

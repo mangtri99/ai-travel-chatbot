@@ -22,13 +22,13 @@ export function useHotelResults() {
   }
 
   function formatPrice(hotel: Hotel): string {
-    return `${hotel.currency ?? '$'}${hotel.price_per_night.toLocaleString()}`
+    return `${hotel.currency ?? 'AUD'} ${hotel.currentCheapestPrice.toLocaleString()}`
   }
 
   function ratingLabel(rating: number): string {
-    if (rating >= 4.5) return 'Excellent'
-    if (rating >= 4.0) return 'Very Good'
-    if (rating >= 3.5) return 'Good'
+    if (rating >= 90) return 'Excellent'
+    if (rating >= 80) return 'Very Good'
+    if (rating >= 70) return 'Good'
     return 'Fair'
   }
 
